@@ -1,6 +1,8 @@
 versions:
   - title: 'Development'
     url: '/kroxylicious'
+  - title: 'v0.8.1'
+    url: '/docs/v0.8.1/'
   - title: 'v0.6.0'
     url: '/docs/v0.6.0/'
   - title: 'v0.5.1'
