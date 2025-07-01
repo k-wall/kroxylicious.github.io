@@ -1,4 +1,7 @@
 FROM ubuntu:24.04
+
+ENV JEKYLL_SERVE_BIND=127.0.0.1
+
 RUN apt-get update && \
     apt install -y git \
                    curl \
@@ -43,4 +46,4 @@ RUN cp -r /css/_sass/* /site/_sass
 
 EXPOSE 4000
 
-CMD eval "$(rbenv init -)" && bundle exec jekyll serve
+CMD eval "$(rbenv init -)" && bundle exec jekyll serve --host ${JEKYLL_SERVE_BIND}
